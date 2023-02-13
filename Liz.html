@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Liz Justol</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.mySlides {display: none}
+.p2 {
+  font-family: "Garamond", "Cursive";
+  font-size: xx-large;
+  color: brown;
+}
+.p3 {
+  font-family: "Lucida Handwriting", "Cursive";
+}
+.p1 {
+  font-family: "Garamond", "Cursive";
+  font-size: medium;
+  color: rgb(53, 52, 52);
+  font-style: italic;
+}
+.p4 {
+  font-family: "Garamond", "Cursive";
+  font-size: xx-large;
+  color: rgb(146, 0, 0);
+}
+
+.p5 {
+  font-family: "Garamond", "Cursive";
+  font-size: xx-large;
+  color: rgb(209, 171, 1);
+}
+</style>
+</head>
+<body>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:10px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/im1.jpg" style="max-width:800px">
+    
+  </div>
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="band">
+    <p class="w3-opacity"><i>To</i></p>
+    <h2 class="w3-wide">Liz Justol</h2>
+    <p class="w3-opacity p4"><i>Happy Valentines Day</i></p>
+    <p class="w2-opacity p3">You're My Sunshine</p>
+    <p class="w2-opacity p3">You're My Always</p>
+    <p class="w2-opacity p3">You're My Best Times <span class="p1">(big time)</span></p>
+    <p class="w2-opacity p3">You're My Anomaly</p><br>
+    <p class="w2-opacity p3">I'd Choose You</p>
+    <p class="w2-opacity p3">In a hundred lifetimes, In a hundred worlds,</p>
+    <p class="w2-opacity p3">In any version of reality</p>
+    <p class="w2-opacity p3">I'd find you and I'd choose you.</p><br>
+    <p class="w2-opacity p3">You are my <span class="p5">Star</span> and <span class="p5">Moon</span></p>
+    <p class="w2-opacity p3">In my darkest days, You bring me Light</p>
+    <p class="w2-opacity p3">You are my inspiration in life</p><br>
+    <p class="w2-opacity p3">Every day, every moment,</p>
+    <p class="w2-opacity p3">I'd choose You.</p>
+    <p class="w2-opacity p3">In a hundred lifetimes, <span class="p2" >Liz</span>, I’d choose You.</p>
+    
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p class="p1">Naulaw pero gwapa gihapon haha</p>
+        <img src="images/im4.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p class="p1">Pinaka Gwapa Gihapon</p>
+        <img src="images/im3.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p class="p1">Pinaka Gwapa Gihapon(2)</p>
+        <img src="images/im2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="w3-hover-opacity">Ps: I would love to have You now than in my “next life”. </i>
+  <p class="w3-medium">Ximdrake Asidor</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
