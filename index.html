@@ -83,7 +83,9 @@
       </div>
     </div>
   </div>
-  
+<audio id="myAudio">
+  <source src="audio/moon.mp3" type="audio/mpeg" autoplay>
+</audio>
 <!-- End Page Content -->
 </div>
 <!-- Footer -->
@@ -93,9 +95,21 @@
 </footer>
 
 <script>
+  window.addEventListener("scroll", function() {
+    var scroll = this.scrollY;
+    console.log(scroll)
+    if (scroll > 10) {
+      autoNotify();
+    }
+})
 // Automatic Slideshow - change image every 4 seconds
 var myIndex = 0;
 carousel();
+var popupsound = document.getElementById("myAudio");
+
+function autoNotify() {
+   popupsound.play(); //play the audio file
+}
 
 function carousel() {
   var i;
